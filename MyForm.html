@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>My Signup Html Form</title>
+    </header>
+    <body>
+        <main>
+            <h1>Signup Form</h1>
+            <section id="defaultForm">
+                <h2>Please complete all the fields</h2>
+                <form id="myform" action="https://afamoapp.glitch.me/api/submit-form" method="post"> 
+                    <fieldset> <legend>Login Credentials</legend>
+                    <label for ="username">Username:</label>
+                    <input type="text" id="username" required name="username" placeholder="What is your username?"><br>
+                    <label for="password">Password:</label>
+                    <input type="password" disabled id="password" name="password" placeholder="Please eneter your password"><br>
+
+                    </fieldset>
+                    <label>Gender:</label>
+                    <label for="male">
+                        Male <input type="radio" id="male" name="gender" value="male">
+                        </label>
+                        <label for="female">
+                            Female <input type="radio" id="female" name="gender" value="female">
+                        </label>
+                        <label for="state">State:</label>
+                        <select id="state">
+                            <option>Select your state</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Abia">Abia</option>
+                        </select><br>
+                        <button>Submit</button>
+                    </label>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
